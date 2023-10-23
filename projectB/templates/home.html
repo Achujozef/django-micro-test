@@ -1,0 +1,14 @@
+<!-- projectB/templates/projectB/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project B</title>
+</head>
+<body>
+    <h1>Project B</h1>
+    <form method="post" action="{% url 'get_hi_from_project_a' %}">
+        {% csrf_token %}
+        <button type="submit">Get "Hi" from Project A</button>
+    </form>
+</body>
+</html>
